@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+.container h1 {
+  font-size: 28px;
+  color: #0072ff;
+  margin-bottom: 20px;
+}
+
+.checker {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input[type="number"] {
+  padding: 10px;
+  font-size: 18px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input[type="number"]:focus {
+  border-color: #0072ff;
+}
+
+button {
+  padding: 10px;
+  font-size: 18px;
+  background: #0072ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #005bb5;
+}
+
+#result {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#historyList {
+  text-align: left;
+  max-height: 200px;
+  overflow-y: auto;
+  padding-left: 20px;
+}
+
+#historyList li {
+  font-size: 18px;
+  margin: 5px 0;
+}
